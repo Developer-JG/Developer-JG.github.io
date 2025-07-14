@@ -1,10 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   output: 'export',
-  basePath: '/my-v0-project',
-  assetPrefix: '/my-v0-project/',
   images: { unoptimized: true },
   trailingSlash: true,
 };
-
-export default nextConfig;
