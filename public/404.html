@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // GitHub Pages에서 SPA 라우팅을 위한 리다이렉션 스크립트
+    (function() {
+      // 현재 URL에서 경로 추출
+      var path = window.location.pathname;
+      var repo = '/{repository-name}'; // 저장소 이름이 있는 경우 설정
+      
+      // 저장소 이름이 있는 경우 경로에서 제거
+      if (repo !== '/' && path.indexOf(repo) === 0) {
+        path = path.slice(repo.length);
+      }
+      
+      // 홈페이지로 리다이렉션하고 경로 정보를 쿼리 파라미터로 전달
+      window.location.href = window.location.origin + repo + '?p=' + encodeURIComponent(path);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
+
