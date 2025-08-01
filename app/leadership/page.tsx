@@ -16,11 +16,33 @@ export default function Leadership() {
 
       <div className="max-w-4xl mx-auto space-y-12">
         <section>
+          <h2 className="text-2xl font-semibold mb-6">The General Student Club Union</h2>
+
+          <Timeline>
+            <TimelineItem>
+              <TimelineHeader>
+                <TimelineIcon />
+                <div className="flex flex-col md:flex-row justify-between w-full">
+                  <h3 className="text-xl font-medium">President</h3>
+                  <p className="text-gray-600">June 2025 - Present</p>
+                </div>
+              </TimelineHeader>
+              <TimelineBody>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li>Promoted autonomous and democratic collaboration among scholarly student organizations by leading the General Association of Academic and Research Clubs.</li>
+                  <li>Facilitated institutional dialogue to safeguard club autonomy and secure university-level support for student-led academic initiatives.</li>
+                  <li>Built sustainable communication and networking systems to connect student researchers across disciplines and enhance collaborative knowledge exchange.</li>
+                </ul>
+              </TimelineBody>
+            </TimelineItem>
+          </Timeline>
+        </section>
+
+        <section>
           <h2 className="text-2xl font-semibold mb-6">The Gachon Research Society</h2>
 
           <Timeline>
             <TimelineItem>
-              <TimelineConnector />
               <TimelineHeader>
                 <TimelineIcon />
                 <div className="flex flex-col md:flex-row justify-between w-full">
@@ -31,7 +53,6 @@ export default function Leadership() {
             </TimelineItem>
 
             <TimelineItem>
-              <TimelineConnector />
               <TimelineHeader>
                 <TimelineIcon />
                 <div className="flex flex-col md:flex-row justify-between w-full">
@@ -42,7 +63,6 @@ export default function Leadership() {
             </TimelineItem>
 
             <TimelineItem>
-              <TimelineConnector />
               <TimelineHeader>
                 <TimelineIcon />
                 <div className="flex flex-col md:flex-row justify-between w-full">

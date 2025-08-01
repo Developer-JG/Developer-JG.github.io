@@ -21,14 +21,13 @@ export default function About() {
           <p className="text-lg text-gray-700 mb-6">
             I am an undergraduate student at Gachon University, majoring in Semiconductor Display at the College of
             Semiconductor, Department of Semiconductor Engineering. My academic journey has been focused on
-            understanding and advancing semiconductor technologies, with a particular interest in solar cell efficiency
-            and materials science.
+            understanding and advancing semiconductor technologies, with a particular interest in materials science.
           </p>
 
-          <p className="text-lg text-gray-700 mb-6">
+          {/* <p className="text-lg text-gray-700 mb-6">
             I have been offered a position in the Integrated Ph.D. program at the Center for Bandstructure Engineering,
             Department of Physics, Yonsei Graduate School (under Prof. Kim, Keunsu Ph.D.), starting in Spring 2026.
-          </p>
+          </p> */}
 
           <h2 className="text-2xl font-semibold mb-4 mt-8">Education</h2>
           <div className="space-y-6">
@@ -57,15 +56,13 @@ export default function About() {
                 </p>
                 <h4 className="font-medium mt-4">Courses Taken:</h4>
                 <ul className="list-disc list-inside text-gray-700 ml-2">
-                  <li>AI, Concept of Art, Philosophy of Art, Literature, Visual Art, Music, Game</li>
-                  <li>
-                    English Research Paper Writing for Graduate Students: Majors in Natural Sciences & Engineering
-                  </li>
+                  <li>(COSS) Big Data and AI in Arts</li>
+                  <li>English Research Paper Writing for Graduate Students: Majors in Natural Sciences and Engineering</li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card>
+            {/* <Card>
               <CardContent className="pt-6">
                 <div className="flex flex-col md:flex-row justify-between mb-2">
                   <h3 className="text-xl font-semibold">Yonsei University</h3>
@@ -77,7 +74,7 @@ export default function About() {
                   <li>PI: Prof. Kim, Keunsu Ph.D.</li>
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

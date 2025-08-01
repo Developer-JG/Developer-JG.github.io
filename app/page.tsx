@@ -34,9 +34,9 @@ export default function Home() {
       <section className="flex flex-col-reverse md:flex-row items-center justify-between py-12 gap-8">
         <div className="md:w-3/5">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Hello, I&apos;m Jeonggyu Hwang</h1>
-          <h2 className="text-xl md:text-2xl text-gray-600 mb-6">
+          {/* <h2 className="text-xl md:text-2xl text-gray-600 mb-6">
             Future Graduate Student at Yonsei University, Spring 2026
-          </h2>
+          </h2> */}
           <p className="text-lg text-gray-700 mb-8 max-w-2xl">
             Researcher focused on semiconductor engineering and materials science with experience in industry and
             academic research.
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* Experience Highlight */}
-      <section className="py-12 bg-gray-50 rounded-xl p-8">
+      {/* <section className="py-12 bg-gray-50 rounded-xl p-8">
         <h2 className="text-3xl font-bold mb-8 text-center">Current Position</h2>
         <div className="max-w-3xl mx-auto">
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -110,13 +110,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact CTA */}
       <section className="py-12 text-center">
         <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
         <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-          Interested in collaboration or have questions about my research? Feel free to reach out.
+          Interested in collaboration or have questions about my research?<br/>Feel free to reach out.
         </p>
         <div className="flex justify-center gap-4">
           <Button className="bg-navy hover:bg-navy/90">

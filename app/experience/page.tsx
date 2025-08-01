@@ -7,6 +7,8 @@ export default function Experience() {
       <h1 className="text-4xl font-bold mb-8 text-center">Professional Experience</h1>
 
       <div className="max-w-4xl mx-auto space-y-8">
+        <h2 className="text-2xl font-semibold mb-6">Industry</h2>
+
         <Card>
           <CardContent className="pt-6">
             <div className="flex flex-col md:flex-row justify-between mb-2">
@@ -30,6 +32,8 @@ export default function Experience() {
             </Accordion>
           </CardContent>
         </Card>
+
+        <h2 className="text-2xl font-semibold mb-6">Experience</h2>
 
         <Card>
           <CardContent className="pt-6">
