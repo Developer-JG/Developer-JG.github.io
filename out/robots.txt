@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://developer-jg.github.io/sitemap.xml
+
