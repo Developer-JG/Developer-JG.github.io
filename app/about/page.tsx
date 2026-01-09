@@ -19,9 +19,9 @@ export default function About() {
         <div className="md:w-2/3">
           <h2 className="text-2xl font-semibold mb-4">Background</h2>
           <p className="text-lg text-gray-700 mb-6">
-            I am an undergraduate student at Gachon University, majoring in Semiconductor Display at the College of
-            Semiconductor, Department of Semiconductor Engineering. My academic journey has been focused on
-            understanding and advancing semiconductor technologies, with a particular interest in materials science.
+            I am an Combined Master-Doctor Student at Yonsei University, School of Electrical and Electronic Engineering at 
+            the College of Engineering. My academic journey has been focused on understanding and advancing semiconductor 
+            technologies, with a particular interest in materials science.
           </p>
 
           {/* <p className="text-lg text-gray-700 mb-6">
