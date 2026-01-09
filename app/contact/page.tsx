@@ -79,7 +79,6 @@ export default function Contact() {
             action={`https://formsubmit.co/${formConfig.emailAddress}`}
             method="POST"
           >
-            {/* FormSubmit 설정 */}
             <input type="hidden" name="_captcha" value={formConfig.useCaptcha ? "true" : "false"} />
             <input type="hidden" name="_subject" value={formConfig.subject} />
             <input type="hidden" name="_template" value={formConfig.template} />
@@ -119,7 +118,7 @@ export default function Contact() {
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-4">Address</h3>
               <p className="text-gray-700">
-                1342 Seongnam-daero, Sujeong-gu, Seongnam-si, Gyeonggi-do, Republic of Korea (13120)
+                50 Yonsei-ro, Seodaemun-gu, Seoul, Republic of Korea (03722)
               </p>
             </CardContent>
           </Card>
@@ -128,10 +127,10 @@ export default function Contact() {
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-4">Email</h3>
               <Link
-                href="mailto:h5638880@gachon.ac.kr"
+                href="mailto:jeonggyuhwang04@gmail.com"
                 className="text-navy hover:underline font-medium flex items-center gap-2"
               >
-                <Mail size={18} /> h5638880@gachon.ac.kr
+                <Mail size={18} /> jeonggyuhwang04@gmail.com
               </Link>
             </CardContent>
           </Card>

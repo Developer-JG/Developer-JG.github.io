@@ -19,28 +19,32 @@ export default function About() {
         <div className="md:w-2/3">
           <h2 className="text-2xl font-semibold mb-4">Background</h2>
           <p className="text-lg text-gray-700 mb-6">
-            I am an Combined Master-Doctor Student at Yonsei University, School of Electrical and Electronic Engineering at 
-            the College of Engineering. My academic journey has been focused on understanding and advancing semiconductor 
-            technologies, with a particular interest in materials science.
+            I am a combined Master–Doctor student in the School of Electrical and Electronic Engineering at Yonsei University. My research focuses on semiconductor technologies, with particular emphasis on materials science and its role in device performance and functionality.
           </p>
-
-          {/* <p className="text-lg text-gray-700 mb-6">
-            I have been offered a position in the Integrated Ph.D. program at the Center for Bandstructure Engineering,
-            Department of Physics, Yonsei Graduate School (under Prof. Kim, Keunsu Ph.D.), starting in Spring 2026.
-          </p> */}
 
           <h2 className="text-2xl font-semibold mb-4 mt-8">Education</h2>
           <div className="space-y-6">
             <Card>
               <CardContent className="pt-6">
                 <div className="flex flex-col md:flex-row justify-between mb-2">
-                  <h3 className="text-xl font-semibold">Gachon University</h3>
-                  <p className="text-gray-600">Expected February 2026</p>
+                  <h3 className="text-xl font-semibold">Yonsei University</h3>
+                  <p className="text-gray-600">March 2026 - Present</p>
                 </div>
                 <p className="text-gray-700">
-                  <li>Undergraduate Student</li>
-                  <li>Major in Semiconductor Display, Department of Semiconductor Engineering, College of Semiconductor</li>
+                  <li>Combined Master-Doctor Student</li>
+                  <li>School of Electrical and Electronic Engineering, College of Engineering</li>
                 </p>
+              <h4 className="font-medium mt-4">Supervisor:{" "}
+  <a
+    href="http://nbdl.yonsei.ac.kr"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:underline"
+  >
+    Prof. Lee, Taeyoon Ph.D.
+  </a>
+</h4>
+              <h4 className="font-medium mt-0">Research topic: TBD</h4>
               </CardContent>
             </Card>
 
@@ -62,19 +66,22 @@ export default function About() {
               </CardContent>
             </Card>
 
-            {/* <Card>
+            <Card>
               <CardContent className="pt-6">
                 <div className="flex flex-col md:flex-row justify-between mb-2">
-                  <h3 className="text-xl font-semibold">Yonsei University</h3>
-                  <p className="text-gray-600">Starting Spring 2026</p>
+                  <h3 className="text-xl font-semibold">Gachon University</h3>
+                  <p className="text-gray-600">March 2023 - February 2026</p>
                 </div>
                 <p className="text-gray-700">
-                  <li>Integrated Ph.D. Student</li>
-                  <li>Department of Physics, College of Seience</li>
-                  <li>PI: Prof. Kim, Keunsu Ph.D.</li>
+                  <li>Undergraduate Student</li>
+                  <li>Major in Semiconductor Display, Department of Semiconductor Engineering, College of Semiconductor</li>
                 </p>
+              <h4 className="font-medium mt-4">GPA (Overall): 4.33 / 4.50</h4>
+              <h4 className="font-medium mt-0">Major GPA: 4.37 / 4.50</h4>
               </CardContent>
-            </Card> */}
+            </Card>
+
+
           </div>
         </div>
       </div>

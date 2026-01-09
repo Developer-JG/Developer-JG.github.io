@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-gray-600 text-sm">© {new Date().getFullYear()} Jeonggyu Hwang. All rights reserved.</p>
+            <p className="text-gray-600 text-sm">© 2025-{new Date().getFullYear()} Jeonggyu Hwang. All rights reserved.</p>
           </div>
 
           <div className="flex space-x-6">
@@ -18,7 +18,7 @@ export default function Footer() {
             >
               <Github size={20} />
             </Link>
-            <Link href="mailto:h5638880@gachon.ac.kr" className="text-gray-600 hover:text-navy transition-colors">
+            <Link href="mailto:jeonggyuhwang04@gmail.com" className="text-gray-600 hover:text-navy transition-colors">
               <Mail size={20} />
             </Link>
             <Link

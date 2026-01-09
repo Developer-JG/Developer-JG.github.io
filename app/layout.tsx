@@ -11,13 +11,13 @@ const inter = Inter({ subsets: ["latin"], display: "swap" })
 export const metadata: Metadata = {
   title: "Jeonggyu Hwang | Academic Portfolio",
   description:
-    "Personal academic website of Jeonggyu Hwang, researcher and future graduate student at Yonsei University.",
-  keywords: ["Jeonggyu Hwang", "semiconductor", "research", "solar cells", "academic portfolio", "Yonsei University"],
+    "Personal academic website of Jeonggyu Hwang, graduate student at Yonsei University.",
+  keywords: ["academic portfolio", "research portfolio", "semiconductor materials", "electronic materials"],
   authors: [{ name: "Jeonggyu Hwang" }],
   openGraph: {
     title: "Jeonggyu Hwang | Academic Portfolio",
     description:
-      "Personal academic website of Jeonggyu Hwang, researcher and future graduate student at Yonsei University.",
+      "Personal academic website of Jeonggyu Hwang, graduate student at Yonsei University.",
     url: "https://developer-jg.github.io",
     siteName: "Jeonggyu Hwang Portfolio",
     locale: "en_US",

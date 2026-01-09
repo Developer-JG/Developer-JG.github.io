@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink } from "lucide-react"
@@ -23,10 +22,10 @@ export default function Research() {
                 <p className="text-gray-600">2025</p>
               </div>
               <p className="text-gray-700 mb-4">
-                <span className="font-medium">Authors:</span> Jeonggyu Hwang,
+                <span className="font-medium">Authors:</span> Jeonggyu Hwang
               </p>
               <p className="text-gray-700 mb-4">
-                <span className="font-medium">Publication:</span> arXiv preprint arXiv:2504.08008
+                <span className="font-medium">Status:</span> arXiv preprint (arXiv:2504.08008)
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <Badge variant="outline" className="border-navy text-navy">
@@ -39,12 +38,9 @@ export default function Research() {
                   Energy Modeling
                 </Badge>
               </div>
-              <p className="text-gray-700 mb-4">
-                This study presents a lightweight model that estimates solar spectral irradiance in Seoul using real-
-                time weather data. By deriving DNI from GHI and adjusting the standard solar spectrum, the model 
-                captures hourly variations with minimal computation. While GHI shows stable seasonal patterns, DNI 
-                reveals sharp fluctuations, underscoring the need for anomaly detection in precision solar forecasting.
-              </p>
+              <p className="text-gray-700 mb-2">
+                We present a lightweight model that estimates solar spectral irradiance in Seoul from real-time meteorological data by deriving DNI from GHI and scaling a standard solar spectrum.</p>
+<p className="text-gray-700 mb-4">The model captures hourly variability with minimal computation, showing that while GHI follows stable seasonal trends, DNI exhibits sharp fluctuations that motivate anomaly detection for precision forecasting.</p>
               <Link
                 href="https://arxiv.org/abs/2504.08008"
                 target="_blank"
@@ -64,10 +60,10 @@ export default function Research() {
                 <p className="text-gray-600">2024</p>
               </div>
               <p className="text-gray-700 mb-4">
-                <span className="font-medium">Authors:</span> Jeonggyu Hwang,
+                <span className="font-medium">Authors:</span> Jeonggyu Hwang
               </p>
               <p className="text-gray-700 mb-4">
-                <span className="font-medium">Publication:</span> arXiv preprint arXiv:2407.12245
+                <span className="font-medium">Status:</span> arXiv preprint (arXiv:2407.12245)
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <Badge variant="outline" className="border-navy text-navy">
@@ -80,11 +76,9 @@ export default function Research() {
                   Theoretical Analysis
                 </Badge>
               </div>
-              <p className="text-gray-700 mb-4">
-                This paper presents a theoretical framework for analyzing how doping concentration gradients affect the
-                performance of solar cells. The research explores optimization strategies for enhancing efficiency
-                through controlled doping profiles.
-              </p>
+              <p className="text-gray-700 mb-2">
+                This paper formulates a theoretical model linking doping gradient profiles to carrier transport and efficiency-relevant parameters in solar cells.</p>
+<p className="text-gray-700 mb-4">By mapping performance sensitivity to gradient shape, it outlines practical strategies for optimizing controlled doping profiles to improve efficiency.</p>
               <Link
                 href="https://arxiv.org/abs/2407.12245"
                 target="_blank"
@@ -104,10 +98,10 @@ export default function Research() {
                 <p className="text-gray-600">2024</p>
               </div>
               <p className="text-gray-700 mb-4">
-                <span className="font-medium">Authors:</span> Jeonggyu Hwang, and Jeon, Jinho
+                <span className="font-medium">Authors:</span> Jeonggyu Hwang and Jinho Jeon
               </p>
               <p className="text-gray-700 mb-4">
-                <span className="font-medium">Publication:</span> arXiv preprint arXiv:2404.14930
+                <span className="font-medium">Status:</span> arXiv preprint (arXiv:2404.14930)
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <Badge variant="outline" className="border-navy text-navy">
@@ -120,11 +114,9 @@ export default function Research() {
                   Theoretical Limits
                 </Badge>
               </div>
-              <p className="text-gray-700 mb-4">
-                This research investigates the theoretical maximum efficiency achievable in multilayer solar cell
-                architectures. The paper provides insights into optimal layer configurations and material combinations
-                for next-generation photovoltaic devices.
-              </p>
+              <p className="text-gray-700 mb-2">
+                We investigate the theoretical efficiency limits of multilayer solar-cell architectures and identify optimal layer configurations under idealized assumptions.</p>
+<p className="text-gray-700 mb-4">The results provide design insights for selecting layer counts and material combinations toward next-generation photovoltaic devices.</p>
               <p className="text-gray-700 mb-4">
                 <span className="font-medium">Presented at:</span> 32nd Korean Conference on Semiconductors (KCS 2025)
               </p>
@@ -146,7 +138,10 @@ export default function Research() {
         <div className="space-y-6">
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold mb-2">Academic Excellence Scholarship</h3>
+              <div className="flex flex-col md:flex-row justify-between mb-2">
+                <h3 className="text-xl font-semibold mb-2">Academic Excellence Scholarship</h3>
+                <p className="text-gray-600">Fall 2023 - Fall 2025 (5 Consecutive Semesters)</p>
+              </div>
               <p className="text-gray-700">
                 Awarded by Gachon University in recognition of outstanding academic performance.
               </p>
@@ -155,7 +150,10 @@ export default function Research() {
 
           <Card>
             <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold mb-2">Undergraduate Poster Presentation Award</h3>
+              <div className="flex flex-col md:flex-row justify-between mb-2">
+                <h3 className="text-xl font-semibold mb-2">Undergraduate Poster Presentation Award</h3>
+                <p className="text-gray-600">February 2025</p>
+              </div>
               <p className="text-gray-700 mb-2">Awarded at the 32nd Korean Conference on Semiconductors (KCS 2025)</p>
               <p className="text-gray-700">
                 Recognized for the research presentation on "Exploring the Theoretical Limits of Efficiency in
@@ -163,6 +161,22 @@ export default function Research() {
               </p>
             </CardContent>
           </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div className="flex flex-col md:flex-row justify-between mb-2">
+                <h3 className="text-xl font-semibold mb-2">Selected for Priority Admission</h3>
+                <p className="text-gray-600">November 2025</p>
+              </div>
+              <p className="text-gray-700 mb-2">
+                Admitted by Yonsei University
+              </p>
+              <p className="text-gray-700">
+                Waived major-specific interview and exam based on document evaluation
+              </p>
+            </CardContent>
+          </Card>
+
         </div>
       </div>
     </div>
