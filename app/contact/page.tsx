@@ -138,7 +138,7 @@ export default function Contact() {
           <Card className="mb-6">
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-4">Phone</h3>
-              <p className="text-gray-700">+82) 10-2766-0335</p>
+              <p className="text-gray-700">+82) 10-2766-0335</p> 
             </CardContent>
           </Card>
 

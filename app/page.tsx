@@ -34,9 +34,9 @@ export default function Home() {
       <section className="flex flex-col-reverse md:flex-row items-center justify-between py-12 gap-8">
         <div className="md:w-3/5">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Hello, I&apos;m Jeonggyu Hwang</h1>
-          {/* <h2 className="text-xl md:text-2xl text-gray-600 mb-6">
-            Future Graduate Student at Yonsei University, Spring 2026
-          </h2> */}
+          <h2 className="text-xl md:text-2xl text-gray-600 mb-6">
+            Graduate Student at Yonsei University
+          </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl">
             Researcher focused on semiconductor engineering and materials science with experience in industry and
             academic research.
@@ -130,7 +130,7 @@ export default function Home() {
             </Link>
           </Button>
           <Button variant="outline" className="border-navy text-navy hover:bg-navy/10">
-            <Link href="mailto:h5638880@gachon.ac.kr" className="flex items-center gap-2">
+            <Link href="mailto:jeonggyuhwang04@gmail.com" className="flex items-center gap-2">
               <Mail size={18} /> Email
             </Link>
           </Button>
