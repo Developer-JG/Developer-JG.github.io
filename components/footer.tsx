@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Github, Mail, ExternalLink } from "lucide-react"
+import { GoogleScholar } from "@/components/icons/GoogleScholar"
 
 export default function Footer() {
   return (
@@ -20,6 +21,13 @@ export default function Footer() {
             </Link>
             <Link href="mailto:jeonggyuhwang04@gmail.com" className="text-gray-600 hover:text-navy transition-colors">
               <Mail size={20} />
+            </Link>
+            <Link
+              href="https://scholar.google.com/citations?user=d2tmjtoAAAAJ"
+              target="_blank"
+              className="text-gray-600 hover:text-navy transition-colors"
+            >
+              <GoogleScholar size={20} />
             </Link>
             <Link
               href="https://orcid.org/0009-0000-6114-871X"

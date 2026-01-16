@@ -11,6 +11,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Github, Mail, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import { formConfig } from "@/lib/form-config"
+import { GoogleScholar } from "@/components/icons/GoogleScholar"
 
 export default function Contact() {
   const { toast } = useToast()
@@ -152,6 +153,13 @@ export default function Contact() {
                   className="text-navy hover:underline font-medium flex items-center gap-2"
                 >
                   <Github size={18} /> GitHub
+                </Link>
+                <Link
+                  href="https://scholar.google.com/citations?user=d2tmjtoAAAAJ"
+                  target="_blank"
+                  className="text-navy hover:underline font-medium flex items-center gap-2"
+                >
+                  <GoogleScholar size={20} /> Google Scholar
                 </Link>
                 <Link
                   href="https://orcid.org/0009-0000-6114-871X"
