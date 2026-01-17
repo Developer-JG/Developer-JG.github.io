@@ -60,18 +60,17 @@ def fetch_stats():
             citations_list = []
             
             for art in articles:
-                # 로그에서 확인한 구조: "cited_by": { "value": 7 }
+                # 님이 확인해주신 로그 구조: "cited_by": { "value": 7 }
                 cited_data = art.get("cited_by", {})
                 val = cited_data.get("value", 0) # 값이 없으면 0
                 citations_list.append(int(val))
             
             print(f"[Debug] Citations per article: {citations_list}")
 
-            # 1. 총 인용 수
+            # 1. 총 인용 수 (다 더하기)
             citations = sum(citations_list)
             
-            # 2. h-index 계산
-            # (내림차순 정렬 후, 논문 번호(h)보다 인용 수가 크거나 같은 최대값 찾기)
+            # 2. h-index 계산 (공식 적용)
             citations_list.sort(reverse=True)
             h_index = 0
             for i, c in enumerate(citations_list):
@@ -80,7 +79,7 @@ def fetch_stats():
                 else:
                     break
             
-            # 3. i10-index 계산 (인용 수 10회 이상인 논문 개수)
+            # 3. i10-index 계산 (10회 이상 인용된 논문 수)
             i10_index = sum(1 for c in citations_list if c >= 10)
 
         # 결과 저장
