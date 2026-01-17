@@ -12,10 +12,10 @@ OUTPUT_FILE = "scholar.json"
 OUTPUT_PATH = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
 
 def fetch_stats():
-    print("--- [Scholar Update Script Started] ---")
+    print("--- [DIAGNOSTIC MODE STARTED] ---")
     
     if not API_KEY:
-        print("[Error] SERPAPI_KEY is missing. Check GitHub Secrets.")
+        print("[Error] SERPAPI_KEY is missing.")
         sys.exit(1)
 
     print(f"[Info] Target Author ID: {AUTHOR_ID}")
@@ -23,7 +23,9 @@ def fetch_stats():
     params = {
         "engine": "google_scholar_author",
         "author_id": AUTHOR_ID,
-        "api_key": API_KEY
+        "api_key": API_KEY,
+        "hl": "en",
+        "num": 100
     }
 
     try:
@@ -36,43 +38,38 @@ def fetch_stats():
             print(f"[Error] SerpApi Error: {data['error']}")
             sys.exit(1)
 
-        # --- [디버깅 시작] 원본 데이터 구조 확인 ---
-        print("\n" + "="*30)
-        print("[Debug] cited_by data structure:")
-        author_info = data.get("author", {})
-        cited_by = author_info.get("cited_by", {})
-        print(json.dumps(cited_by, indent=2, ensure_ascii=False))
-        print("="*30 + "\n")
-        # -------------------------------------
-
-        # 기존 파싱 로직 (테이블 기반)
+        # 1. 요약표 확인
+        cited_by = data.get("author", {}).get("cited_by", {})
         table = cited_by.get("table", [])
+        print(f"\n[Check 1] Summary Table Exists? {'YES' if table else 'NO'}")
         
-        # 테이블이 비었을 경우를 대비한 방어 코드
-        if not table:
-            print("[Warning] 'table' list is empty! Trying to find stats elsewhere...")
-            # 만약 table이 비어있다면, 일단 0으로 두되 로그를 통해 원인을 파악합니다.
-            citations = 0
-            h_index = 0
-            i10_index = 0
-        else:
-            citations = table[0].get("citations", {}).get("all", 0) if len(table) > 0 else 0
-            h_index = table[1].get("h_index", {}).get("all", 0) if len(table) > 1 else 0
-            i10_index = table[2].get("i10_index", {}).get("all", 0) if len(table) > 2 else 0
+        # 2. 논문 목록 확인
+        articles = data.get("articles", [])
+        print(f"[Check 2] Number of Articles Found: {len(articles)}")
 
+        # 3. (중요) 첫 번째 논문의 데이터 구조 뜯어보기
+        if articles:
+            print("\n" + "="*20 + " [FIRST ARTICLE RAW DATA] " + "="*20)
+            # 첫 번째 논문의 모든 정보를 로그에 출력합니다.
+            print(json.dumps(articles[0], indent=2, ensure_ascii=False))
+            print("="*60 + "\n")
+        else:
+            print("[Warning] No articles found! Check if the profile is public.")
+
+        # --- 임시 저장 (웹사이트 갱신 확인용 가짜 데이터) ---
+        # 진단 중에도 웹사이트가 변하는지 보기 위해 강제로 숫자를 넣습니다.
         stats = {
-            "citations": citations,
-            "h_index": h_index,
-            "i10_index": i10_index,
+            "citations": 9999,      # 로그 확인 후 진짜 코드로 바꿀 예정
+            "h_index": 99,
+            "i10_index": 99,
             "last_updated": datetime.now().strftime("%Y-%m-%d"),
         }
-
+        
         os.makedirs(OUTPUT_DIR, exist_ok=True)
         with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
             json.dump(stats, f, ensure_ascii=False, indent=2)
-
-        print(f"[Success] Saved to {OUTPUT_PATH}")
-        print(json.dumps(stats, indent=2))
+            
+        print("[Info] Saved DUMMY data (9999) for testing.")
 
     except Exception as e:
         print(f"[Critical Error] {e}")
