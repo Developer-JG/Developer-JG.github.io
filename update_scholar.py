@@ -20,7 +20,6 @@ def fetch_stats():
 
     print(f"[Info] Target Author ID: {AUTHOR_ID}")
     
-    # 논문을 충분히 가져오기 위해 num=100 설정
     params = {
         "engine": "google_scholar_author",
         "author_id": AUTHOR_ID,
@@ -39,7 +38,7 @@ def fetch_stats():
             print(f"[Error] SerpApi Error: {data['error']}")
             sys.exit(1)
 
-        # 1. 요약표 확인 (있으면 쓰고, 없으면 직접 계산)
+        # 1. 요약표 확인
         author_info = data.get("author", {})
         cited_by_table = author_info.get("cited_by", {}).get("table", [])
         
@@ -60,18 +59,21 @@ def fetch_stats():
             citations_list = []
             
             for art in articles:
-                # 님이 확인해주신 로그 구조: "cited_by": { "value": 7 }
                 cited_data = art.get("cited_by", {})
-                val = cited_data.get("value", 0) # 값이 없으면 0
+                val = cited_data.get("value") # 일단 값을 가져옴
+                
+                # [수정된 부분] 값이 None(Null)이면 0으로 강제 변환
+                if val is None:
+                    val = 0
+                    
                 citations_list.append(int(val))
             
             print(f"[Debug] Citations per article: {citations_list}")
 
-            # 1. 총 인용 수 (다 더하기)
+            # 계산 로직
             citations = sum(citations_list)
-            
-            # 2. h-index 계산 (공식 적용)
             citations_list.sort(reverse=True)
+            
             h_index = 0
             for i, c in enumerate(citations_list):
                 if c >= i + 1:
@@ -79,7 +81,6 @@ def fetch_stats():
                 else:
                     break
             
-            # 3. i10-index 계산 (10회 이상 인용된 논문 수)
             i10_index = sum(1 for c in citations_list if c >= 10)
 
         # 결과 저장
