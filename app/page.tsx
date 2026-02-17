@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Github, Mail, ExternalLink } from "lucide-react"
+import { GoogleScholar } from "@/components/icons/GoogleScholar"
 
 type ScholarStats = {
   citations: number
@@ -195,6 +196,13 @@ export default function Home() {
               <Github size={18} /> GitHub
             </Link>
           </Button>
+
+          <Button variant="outline" className="border-navy text-navy hover:bg-navy/10">
+            <Link href="https://scholar.google.com/citations?user=d2tmjtoAAAAJ" target="_blank" className="flex items-center gap-2">
+              <GoogleScholar size={20} /> Google Scholar
+            </Link>
+          </Button>
+
           <Button variant="outline" className="border-navy text-navy hover:bg-navy/10">
             <Link href="mailto:jeonggyuhwang04@gmail.com" className="flex items-center gap-2">
               <Mail size={18} /> Email

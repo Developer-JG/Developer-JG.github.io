@@ -30,20 +30,25 @@ export default function About() {
                   <h3 className="text-xl font-semibold">Yonsei University</h3>
                   <p className="text-gray-600">March 2026 - Present</p>
                 </div>
-                <p className="text-gray-700">
-                  <li>Combined Master-Doctor Student</li>
-                  <li>School of Electrical and Electronic Engineering, College of Engineering</li>
-                </p>
+                <div className="space-y-1 text-gray-700 leading-relaxed">
+                  <p>
+                    <li>Combined Master-Doctor Student</li>
+                    <li>School of Electrical and Electronic Engineering, College of Engineering</li>
+                  </p>
+                  <p>
+                    <li>Selected for Priority Admission</li>
+                  </p>
+                </div>
               <h4 className="font-medium mt-4">Supervisor:{" "}
-  <a
-    href="http://nbdl.yonsei.ac.kr"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-600 hover:underline"
-  >
-    Prof. Lee, Taeyoon Ph.D.
-  </a>
-</h4>
+                <a
+                  href="http://nbdl.yonsei.ac.kr"
+                 target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Prof. Lee, Taeyoon Ph.D.
+                </a>
+              </h4>
               <h4 className="font-medium mt-0">Research topic: TBD</h4>
               </CardContent>
             </Card>
@@ -72,10 +77,16 @@ export default function About() {
                   <h3 className="text-xl font-semibold">Gachon University</h3>
                   <p className="text-gray-600">March 2023 - February 2026</p>
                 </div>
-                <p className="text-gray-700">
-                  <li>Undergraduate Student</li>
-                  <li>Major in Semiconductor Display, Department of Semiconductor Engineering, College of Semiconductor</li>
-                </p>
+                <div className="space-y-1 text-gray-700 leading-relaxed">
+                  <p>
+                    <li>Undergraduate Student</li>
+                    <li>Major in Semiconductor Display, Department of Semiconductor Engineering, College of Semiconductor</li>
+                  </p>
+                  <p>
+                    <li>Degree: Bachelor of Engineering (B.E.)</li>
+                    <li>Honors: Cum Laude (Top 7% of the Class)</li>
+                  </p>
+                </div>
               <h4 className="font-medium mt-4">GPA (Overall): 4.33 / 4.50</h4>
               <h4 className="font-medium mt-0">Major GPA: 4.37 / 4.50</h4>
               </CardContent>

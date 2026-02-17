@@ -134,8 +134,38 @@ export default function Research() {
 
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6">Awards and Honors</h2>
-
         <div className="space-y-6">
+
+          <Card>
+            <CardContent className="pt-6">
+              <div className="flex flex-col md:flex-row justify-between mb-2">
+                <h3 className="text-xl font-semibold mb-2">Cum Laude</h3>
+                <p className="text-gray-600">February 2026</p>
+              </div>
+              <p className="text-gray-700 mb-2">
+                Conferred by Gachon University
+              </p>
+              <p className="text-gray-700">
+                Graduated with honors (Top 7% of graduating class).
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <div className="flex flex-col md:flex-row justify-between mb-2">
+                <h3 className="text-xl font-semibold mb-2">Selected for Priority Admission</h3>
+                <p className="text-gray-600">November 2025</p>
+              </div>
+              <p className="text-gray-700 mb-2">
+                Admitted by Yonsei University
+              </p>
+              <p className="text-gray-700">
+                Waived major-specific interview and exam based on document evaluation
+              </p>
+            </CardContent>
+          </Card>
+
           <Card>
             <CardContent className="pt-6">
               <div className="flex flex-col md:flex-row justify-between mb-2">
@@ -154,25 +184,12 @@ export default function Research() {
                 <h3 className="text-xl font-semibold mb-2">Undergraduate Poster Presentation Award</h3>
                 <p className="text-gray-600">February 2025</p>
               </div>
-              <p className="text-gray-700 mb-2">Awarded at the 32nd Korean Conference on Semiconductors (KCS 2025)</p>
+              <p className="text-gray-700 mb-2">
+                Awarded at the 32nd Korean Conference on Semiconductors (KCS 2025)
+              </p>
               <p className="text-gray-700">
                 Recognized for the research presentation on "Exploring the Theoretical Limits of Efficiency in
                 Multilayer Solar Cells."
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="pt-6">
-              <div className="flex flex-col md:flex-row justify-between mb-2">
-                <h3 className="text-xl font-semibold mb-2">Selected for Priority Admission</h3>
-                <p className="text-gray-600">November 2025</p>
-              </div>
-              <p className="text-gray-700 mb-2">
-                Admitted by Yonsei University
-              </p>
-              <p className="text-gray-700">
-                Waived major-specific interview and exam based on document evaluation
               </p>
             </CardContent>
           </Card>
