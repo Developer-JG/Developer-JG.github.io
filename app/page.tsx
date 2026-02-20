@@ -147,6 +147,7 @@ export default function Home() {
               Read more →
             </Link>
           </div>
+        </div>
       </section>
 
       {/* Experience Highlight */}
