@@ -185,7 +185,7 @@ export default function Home() {
           <br />
           Feel free to reach out.
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           <Button className="bg-navy hover:bg-navy/90">
             <Link href="/contact" className="flex items-center gap-2">
               Contact Me
