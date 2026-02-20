@@ -132,6 +132,14 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-8 text-center">Featured Research</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-2">Theoretical Analysis of Doping Concentration Gradients on Solar Cell Performance</h3>
+            <p className="text-gray-600 mb-4">arXiv preprint arXiv:2407.12245 (2024)</p>
+            <Link href="/research" className="text-navy hover:underline font-medium">
+              Read more →
+            </Link>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-semibold mb-2">Exploring the Theoretical Limits of Efficiency in Multilayer Solar Cells</h3>
             <p className="text-gray-600 mb-4">arXiv preprint arXiv:2404.14930 (2024)</p>
             <p className="text-gray-700 mb-4">Presented at the 32nd Korean Conference on Semiconductors (KCS 2025).</p>
@@ -139,18 +147,6 @@ export default function Home() {
               Read more →
             </Link>
           </div>
-
-          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-semibold mb-2">
-              Estimation of Solar Spectral Irradiance Using Meteorological Data and Analysis of Optimal Conditions for
-              Solar Power Generation
-            </h3>
-            <p className="text-gray-600 mb-4">arXiv preprint arXiv:2504.08008 (2025)</p>
-            <Link href="/research" className="text-navy hover:underline font-medium">
-              Read more →
-            </Link>
-          </div>
-        </div>
       </section>
 
       {/* Experience Highlight */}
