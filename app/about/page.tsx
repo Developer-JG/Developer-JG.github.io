@@ -46,7 +46,7 @@ export default function About() {
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline"
                 >
-                  Prof. Lee, Taeyoon Ph.D.
+                  Prof. Lee, Taeyoon
                 </a>
               </h4>
               <h4 className="font-medium mt-0">Research topic: TBD</h4>
@@ -60,7 +60,7 @@ export default function About() {
                   <p className="text-gray-600">August 2024 - February 2025</p>
                 </div>
                 <p className="text-gray-700 mb-2">
-                  <li>Exchange Student</li>
+                  <li>Undergraduate Exchange Student</li>
                   <li>Department of Materials Science and Engineering, College of Engineering</li>
                 </p>
                 <h4 className="font-medium mt-4">Courses Taken:</h4>
@@ -84,7 +84,7 @@ export default function About() {
                   </p>
                   <p>
                     <li>Degree: Bachelor of Engineering (B.E.)</li>
-                    <li>Honors: Cum Laude (Top 7% of the Class)</li>
+                    <li>Honors: Cum Laude</li>
                   </p>
                 </div>
               <h4 className="font-medium mt-4">GPA (Overall): 4.33 / 4.50</h4>

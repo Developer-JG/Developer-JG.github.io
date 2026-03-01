@@ -98,7 +98,7 @@ export default function Research() {
                 <p className="text-gray-600">2024</p>
               </div>
               <p className="text-gray-700 mb-4">
-                <span className="font-medium">Authors:</span> Jeonggyu Hwang and Jinho Jeon
+                <span className="font-medium">Authors:</span> Jeonggyu Hwang
               </p>
               <p className="text-gray-700 mb-4">
                 <span className="font-medium">Status:</span> arXiv preprint (arXiv:2404.14930)
@@ -118,7 +118,7 @@ export default function Research() {
                 We investigate the theoretical efficiency limits of multilayer solar-cell architectures and identify optimal layer configurations under idealized assumptions.</p>
 <p className="text-gray-700 mb-4">The results provide design insights for selecting layer counts and material combinations toward next-generation photovoltaic devices.</p>
               <p className="text-gray-700 mb-4">
-                <span className="font-medium">Presented at:</span> 32nd Korean Conference on Semiconductors (KCS 2025)
+                Poster presented at the 32nd Korean Conference on Semiconductors (KCS), Korea. (Corresponding Author: Jinho Jeon)
               </p>
               <Link
                 href="https://arxiv.org/abs/2404.14930"
@@ -139,14 +139,14 @@ export default function Research() {
           <Card>
             <CardContent className="pt-6">
               <div className="flex flex-col md:flex-row justify-between mb-2">
-                <h3 className="text-xl font-semibold mb-2">Cum Laude</h3>
+                <h3 className="text-xl font-semibold mb-2">Graduation with Honors</h3>
                 <p className="text-gray-600">February 2026</p>
               </div>
               <p className="text-gray-700 mb-2">
                 Conferred by Gachon University
               </p>
               <p className="text-gray-700">
-                Graduated with honors (Top 7% of graduating class).
+                Cum Laude
               </p>
             </CardContent>
           </Card>
@@ -185,7 +185,7 @@ export default function Research() {
                 <p className="text-gray-600">February 2025</p>
               </div>
               <p className="text-gray-700 mb-2">
-                Awarded at the 32nd Korean Conference on Semiconductors (KCS 2025)
+                Awarded at the 32nd Korean Conference on Semiconductors (KCS), Korea.
               </p>
               <p className="text-gray-700">
                 Recognized for the research presentation on "Exploring the Theoretical Limits of Efficiency in
