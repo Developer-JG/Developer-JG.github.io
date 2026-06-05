@@ -84,7 +84,7 @@ export default function About() {
                   </p>
                   <p>
                     <li>Degree: Bachelor of Engineering (B.E.)</li>
-                    <li>Honors: Cum Laude</li>
+                    <li>Graduation with Honors</li>
                   </p>
                 </div>
               <h4 className="font-medium mt-4">GPA (Overall): 4.33 / 4.50</h4>
