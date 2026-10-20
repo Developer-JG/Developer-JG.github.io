@@ -57,7 +57,7 @@ export default function Experience() {
                     <span className="font-medium">PI:</span> Prof. Lee, Taeyoon Ph.D.
                   </p>
                   <p className="mb-2">
-                    <span className="font-medium">Research topic:</span> TBD
+                    <span className="font-medium">Research topic:</span> Phase-Change Hyperlens
                   </p>
                 </AccordionContent>
               </AccordionItem>

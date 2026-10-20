@@ -130,7 +130,16 @@ export default function Leadership() {
       <div className="space-y-1">
         <div className="mb-1 flex flex-col justify-between md:flex-row">
           <h3 className="text-xl font-semibold">Teaching Assistant (TA)</h3>
-          <p className="text-gray-600">February 2026 - June 2026 (Expected)</p>
+          <p className="text-gray-600">September 2026 - December 2026</p>
+        </div>
+        <p className="text-lg font-medium">Physical Electronics (EEE6807), Fall 2026</p>
+        <p className="text-gray-700">School of Electrical & Electronic Engineering, Yonsei University</p>
+      </div>
+
+      <div className="space-y-1">
+        <div className="mb-1 flex flex-col justify-between md:flex-row">
+          <h3 className="text-xl font-semibold">Teaching Assistant (TA)</h3>
+          <p className="text-gray-600">February 2026 - June 2026</p>
         </div>
         <p className="text-lg font-medium">Physical Electronics (EEE3210), Spring 2026</p>
         <p className="text-gray-700">School of Electrical & Electronic Engineering, Yonsei University</p>
