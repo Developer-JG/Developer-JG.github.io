@@ -13,7 +13,7 @@ export default function Experience() {
           <CardContent className="pt-6">
             <div className="flex flex-col md:flex-row justify-between mb-2">
               <h2 className="text-2xl font-semibold">Philoptics Co., Ltd</h2>
-              <p className="text-gray-600">March 2024 - Present</p>
+              <p className="text-gray-600">March 2024 - May 2025</p>
             </div>
             <p className="text-lg font-medium mb-4">Engineer, Semiconductor Department, R&D Division</p>
             <p className="text-gray-700 mb-4">Osan-si, Gyeonggi-do, South Korea</p>

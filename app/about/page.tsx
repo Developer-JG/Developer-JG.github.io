@@ -49,7 +49,7 @@ export default function About() {
                   Prof. Lee, Taeyoon
                 </a>
               </h4>
-              <h4 className="font-medium mt-0">Research topic: TBD</h4>
+              <h4 className="font-medium mt-0">Research topic: Phase-Change Hyperlens</h4>
               </CardContent>
             </Card>
 
